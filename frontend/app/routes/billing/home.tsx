@@ -1,5 +1,7 @@
 import type { Route } from "./+types/home";
 
+import Page from "~/components/Page";
+
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -8,5 +10,9 @@ export function meta({ }: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <h1>Empty page</h1>;
+  return (
+    <Page>
+      <h1>Empty page</h1>
+    </Page>
+  );
 }
